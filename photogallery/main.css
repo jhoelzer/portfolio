@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(./img/TexturesCom_WoodPlanksBare0347_1_seamless_S.jpg);
+  font-size: Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 300%;
+  font-family: Tahoma, sans-serif;
+}
+
+h2 {
+  font-size: 175%;
+  font-family: Tahoma, sans-serif;
+  line-height: 215px;
+
+}
+
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: #555;
+  padding: 0px;
+  margin: 0.5em 0 0.35em 0;
+}
+
+.contentWrapper {
+  margin: 0 auto;
+  max-width: 2000px;
+  padding: 0 3.0em;
+}
+
+header {
+  padding: 10em 0 0.5em;
+  margin: 0 0 2.0em;
+  background: url(./img/background1.jpg) center 0px;
+}
+
+header h1 {
+  font-size: 500%;
+  color: #fff;
+}
+
+header h3 {
+  font-size: 200%;
+  color: #fff;
+}
+
+/* Nav */
+nav {
+  color: #000;
+  font-size: 1.7em;
+  letter-spacing: 0.04em
+  padding: 1.0em 1.0em 0.5em;
+  margin: 1.0em 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav li a, nav li a:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.3em 0.6em;
+}
+
+nav li a:hover {
+  color: #fff;
+  background-color: rgba(252, 251, 243, 0.75);
+}
+
+nav#menu {
+  float: right;
+  margin: -5em 0 0 0;
+  padding: 0.35em;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 1.3em;
+}
+
+nav#menu li {
+  padding: 0 0.25em 0 0.2em;
+  vertical-align: middle;
+}
+
+nav#menu ul li.acctNav a, nav#menu ul li.acctNav a:visited {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  font-family: Tahoma, sans-serif;
+  display: inline-block;
+  height: 1.3em;
+  padding: 0.2em;
+  margin: 0 0 0 0.5em;
+  font-size: 0.8em;
+}
+
+nav#menu ul li.acctNav a.active {
+  background-color: rgb(74, 86, 118);
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+} 
+
+nav#menu ul li.acctNav a:hover {
+  background-color: rgba(252, 251, 243, 0.7);
+  color: #fff;
+}
+
+nav#menu ul li a, nav#menu ul li a:visited {
+  padding: 0
+}
+
+nav#menu ul li a:hover {
+  background-color: transparent;
+}
+
+nav#menu ul li input#search {
+  vertical-align: middle;
+  margin: 0 0 0 1.0em;
+}
+
+nav#menu ul li.acctNav::before, nav#menu ul li input#search::before {
+  content: "| ";
+  color: #FCFBE6;
+}
+
+nav#subMenu ul {
+  margin: 0 0 0 -10em;
+  padding: .9em .9em .9em 10em;
+  height: 1.3em;
+  font-family: Tahoma, sans-serif;
+}
+
+.gradient {
+  height: 75px;
+  margin: 0 0 0 -8em;
+  padding: .2em .5em .5em 3em;
+  border-radius: 1em;
+  background-image:
+    linear-gradient(
+      to right, 
+      rgb(74, 86, 118), transparent
+    );
+}
+
+/* Sidebar */
+section#sidebar {
+  width: 350px;
+  height: 1750px;
+  font-family: Tahoma, sans-serif;
+  float: right;
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  margin: 1.5em 0 3.0em 1.5em;
+  padding: 1.7em 2.5em 2.0em 1.7em;
+  border-left: rgb(74, 86, 118) solid 20px;
+}
+
+/* Main */
+section#main {
+  background-color: transparent;
+  width: 1775px;
+  margin: 0 0 2.0em;
+  padding: 1.5em 0 2.0em 1.5em;
+  display: inline-block;
+  box-shadow: 1px 1px 5px #777;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+
+/* Photo Stacks */
+div[class*="stack"] {
+  border: 20px solid #fff;
+  float: left;
+  height: 322px;
+  width: 450px;
+  margin: 45px 45px 200px 45px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+div[class*="stack"], div[class*="stack"]:before, div[class*="stack"]:after{
+  height: 322px;
+  width: 450px;
+  border: 20px solid #fff;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+div[class*="stack"]:before, div[class*="stack"]:after {
+  content: "";
+  background: #768590;
+  position: absolute;
+  z-index: -1;
+}
+
+div[class*="stack"]:before {
+  background: #eff4de;
+}
+
+/*stack1*/
+.stack1:before {
+  top: 4px;
+  left: -6px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.stack1:after {
+  top: -2px;
+  left: -6px;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/*stack2*/
+.stack2:before {
+  top: 4px;
+  left: -6px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.stack2:after {
+  top: -5px;
+  left: -15px;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+/*stack3*/
+.stack3:before {
+  top: 2px;
+  left: -10px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.stack3:after {
+  top: 5px;
+  left: -15px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+/*stack4*/
+.stack4:before {
+  top: -10px;
+  left: -6px;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+
+.stack4:after {
+  top: -2px;
+  left: -6px;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+/*stack5*/
+.stack5:before {
+  top: 2px;
+  left: -10px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.stack5:after {
+  top: 5px;
+  left: -15px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+/*stack6*/
+.stack6:before {
+  top: 2px;
+  left: -10px;
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.stack6:after {
+  top: 8px;
+  left: -15px;
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+
+/*stack7*/
+.stack7:before {
+  top: 2px;
+  left: -10px;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+}
+
+.stack7:after {
+  top: 5px;
+  left: -15px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+/*stack8*/
+.stack8:before {
+  top: 2px;
+  left: -10px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.stack8:after {
+  top: -10px;
+  left: -15px;
+  -webkit-transform: rotate(9deg);
+  -moz-transform: rotate(9deg);
+  -o-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+
+/*stack9*/
+.stack9:before {
+  top: 2px;
+  left: -10px;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+.stack9:after {
+  top: 5px;
+  left: -15px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+/* Footer */
+footer {
+  background-color: rgb(74, 86, 118);
+  height: 50px;
+  font-size: 1.3em;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 1.5em 2.0em;
+}
+
+footer ul#menuFooter {
+  display: inline-block;
+  list-style: none;
+  margin: 0 0 0 0.6em;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  padding: 0 0.7em 0 0;
+  margin: 0;
+}
+
+footer ul li::before {
+  content: "| ";
+  padding-right: 0.7em;
+}
+
+footer a, footer a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+div.clear {
+  clear: both;
+  font-size: 1%;
+}
